@@ -1,0 +1,38 @@
+{
+    "entities": [
+        {
+            "type": "player",
+            "x": 1,
+            "y": 3
+        },
+        {
+            "type": "boulder",
+            "x": 2,
+            "y": 3
+        },
+        {
+            "type": "switch",
+            "x": 3,
+            "y": 3
+        },
+        {
+            "type": "wire",
+            "x": 3,
+            "y": 2
+        },
+        {
+            "type": "light_bulb_off",
+            "x": 2,
+            "y": 2,
+            "logic": "xor"
+        },
+        {
+            "type": "exit",
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "goal-condition": {
+        "goal": "exit"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "entities": [
+        {
+            "type": "player",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "type": "spider",
+            "x": 2,
+            "y": 2
+        },
+        {
+            "type": "exit",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "type": "treasure",
+            "x": 0,
+            "y": 4
+        }
+    ],
+    "goal-condition": {
+        "goal": "AND",
+        "subgoals": [
+            {
+                "goal": "OR",
+                "subgoals": [
+                    {
+                        "goal": "enemies"
+                    },
+                    {
+                        "goal": "treasure"
+                    }
+                ]
+            },
+            {
+                "goal": "exit"
+            }
+        ]
+    }
+}
